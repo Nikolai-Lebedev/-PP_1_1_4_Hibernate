@@ -18,6 +18,11 @@ public class User {
     @Column
     private Byte age;
 
+    @Override
+    public String toString() {
+        return "id - " + id + " name - " + name + " last name - " + lastName + " age - " + age + "\n";
+    }
+
     public User() {
 
     }
